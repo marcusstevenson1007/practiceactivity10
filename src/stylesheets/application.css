@@ -5,3 +5,70 @@
 }
 
 /* TODO */
+
+.title{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.foods {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.foods .thumbnail {
+  margin: 5px;
+}
+
+.foods .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.foods .featured {
+  grid-area: span 4 / span 7 / 1 / 3;
+  margin: 10px;
+}
+
+.foods .featured img {
+  width: 90%;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 575px){
+  
+    .foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .foods .thumbnail {
+    margin: 5px;
+  }
+
+  .foods .thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .foods .featured {
+    grid-area: span 9 / span 5 / 1 / 3;
+    margin: 10px;
+  }
+
+  .foods .featured img {
+    width: 100%;
+    margin: 10px;
+    padding-right: 20px;
+  }
+}
